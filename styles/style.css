@@ -1,1 +1,397 @@
-/* место для вашего кода */
+.link-typografy {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header {
+  display: grid;
+  height: 293px;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-areas: "navigation logo contacts";
+  align-items: center;
+}
+.main {
+  padding: 0;
+  margin-bottom: 180px;
+}
+.navigation {
+  position: relative;
+  list-style: circle;
+  left: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  grid-area: navigation;
+}
+.navigation-link {
+  text-decoration: none;
+  border-bottom: solid 1px #000;
+}
+.none-style {
+  border-bottom: solid 0px #000;
+}
+
+.none-circle {
+  list-style: none;
+}
+
+.logo {
+  width: 148px;
+  grid-area: logo;
+}
+
+.contacts {
+  font-style: normal;
+  grid-area: contacts;
+}
+
+.contacts-header {
+  position: relative;
+  justify-self: end;
+  right: 50px;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 180px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.window {
+  padding-top: 165px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.text-cover {
+  height: 385px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 106px;
+}
+
+.title-cover {
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "left . ."
+    ". center ."
+    ". . right";
+}
+
+.title-cover-left {
+  grid-area: left;
+  justify-self: left;
+  align-self: start;
+}
+
+.title-cover-center {
+  grid-area: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.title-cover-right {
+  position: relative;
+  right: 68px;
+  grid-area: right;
+  justify-self: center;
+  align-self: center;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 51px;
+  width: 1000px;
+  margin: 0 auto 50px auto;
+}
+
+.subline {
+  display: flex;
+  align-items: center;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  line-height: 28px;
+  color: white;
+  letter-spacing: 0;
+  word-spacing: 22px;
+  text-transform: uppercase;
+}
+
+.button {
+  border: 1px solid #ffffff;
+  width: 256px;
+  height: 100%;
+  color: white;
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  background-color: transparent;
+}
+
+.lots {
+  width: 1052px;
+  height: 723px;
+  margin: 0 auto 120px;
+}
+
+.title-lots {
+  position: relative;
+  left: 40px;
+}
+
+.title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 27px 0 30px;
+}
+
+.cards-list-item {
+  display: flex;
+  list-style: none;
+  width: 334px;
+  height: 596px;
+}
+
+.cards-list-item-link {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+  box-sizing: border-box;
+}
+
+.title-card {
+  color: white;
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.text-card {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: white;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.background-image-card-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-image-card-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-image-card-3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.more {
+  border-bottom: 1px solid #000;
+  margin-left: 40px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.about {
+  margin: 0 auto;
+  display: grid;
+  width: 1052px;
+  height: 595px;
+  grid-template-columns: 359px 1fr;
+  grid-template-areas: "about-logo about-text";
+  justify-content: space-between;
+}
+
+.about-logo {
+  position: relative;
+  top: 35px;
+  left: 47px;
+  grid-area: about-logo;
+}
+
+.circle {
+  background-color: #000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+}
+.about-logo-image {
+  width: 148px;
+}
+
+.about-text {
+  margin-top: 133px;
+  justify-self: end;
+  height: 449px;
+  grid-area: about-text;
+}
+
+.text {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.text-about-1 {
+  margin-top: 100px;
+}
+
+.text-about-2 {
+  margin-top: 24px;
+}
+
+.footer {
+  width: 100%;
+  height: 180px;
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "contacts navigation-footer icons";
+}
+
+.contacts-footer {
+  position: relative;
+  left: 50px;
+}
+
+.navigation-footer {
+  grid-area: navigation-footer;
+  justify-content: center;
+  position: relative;
+  right: 50px;
+}
+
+.navigation-footer-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  position: relative;
+  right: 50px;
+  justify-content: end;
+  display: flex;
+  flex-wrap: nowrap;
+  grid-area: icons;
+  gap: 48px;
+}
+
+.icon {
+  list-style: none;
+  width: 48px;
+  height: 48px;
+}
